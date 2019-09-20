@@ -10,10 +10,9 @@ while gen not in "FM":
     gen = str(input("Desculpe, valor inválido. Tente novamente.\n"
                     "Digite seu sexo [Masculino/Feminino]: ")).strip().upper()[0]
 if gen == "M":
-    h = str(input("Digite a sua altura: ")).replace(",",".")
+    h = str(input("Digite a sua altura: ")).replace(",", ".")
     pesoideal = 72.7*float(h) - 58
     mcm = h.split(".")
-    print(f"Sua altura é {mcm[0]}m e {mcm[1]}cm. Seu peso ideal é {pesoideal:.2f}Kg")
 else:
     h = str(input("Digite a sua altura: ")).replace(",", ".")
     pesoideal = 62.1 * float(h) - 44.7
